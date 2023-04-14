@@ -1,0 +1,89 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(name="keywords", content="")
+        meta(name="description", content="")
+        meta(name="ROBOT", content="INDEX, FOLLOW")
+        link(rel="shortcut icon", href="../pictures/Vector.svg", type="image/x-icon")
+        title Anushree Sharma | Developer
+        style 
+            include ../style/style.css
+    body
+        nav
+            div#logo
+                img(src="../pictures/Vector.svg", alt="", srcset="")#logoImg
+            ul
+                li 
+                    a(href="#Home") HOME
+                li
+                    a(href="#About") ABOUT
+                li
+                    a(href="#Skills") SKILLS
+                li
+                    a(href="#Experience") EXPERIENCE
+                li
+                    a(href="#form") GET IN TOUCH
+        div#main
+            img(src="../pictures/Vector.svg")#backgroundImg
+            section#Home.section 
+                button#resume.resume
+                    a(href="/resume" target="__blank")#download Get Resume 
+                h6#typing0 My Name is
+                p#typing1 Anushree Sharma.
+                h5 UI/UX Designer and a Website Developer.
+            section#About.section 
+                p About 
+                div I am an Undergraduate pursuing Bachelors in Computer Science and Design. I like to design templates using different UI tools.I am also proficient in  making Frontend Websites and Coding. I love painting and I am always curious about learning new things.Looking for good opportunities.
+            section#Skills.section 
+                p Skills 
+                div I'm proficient with different Developing as well as designing skills, Also When I master a new skill, I feel extremely curious and content.
+                div C++ 
+                    img(src="../pictures/3star.svg", alt="", srcset="")
+                div Data Structures and Algorithms
+                    img(src="../pictures/2star.svg", alt="")
+                div Python 
+                    img(src="../pictures/3star.svg", alt="", srcset="")
+                div UI/UX Designing
+                    img(src="../pictures/5star.svg", alt="", srcset="")
+                div Regex 
+                    img(src="../pictures/5star.svg", alt="", srcset="")
+                div MERN Stack Web developement
+                    img(src="../pictures/3star.svg", alt="", srcset="")
+            section#Experience.section 
+                p Experience 
+                div I have interned for a few companies, including Digimonk, where I spent about two months as a user interface intern. I've taken multiple data science courses and attended a number of seminars. I'm up for exploring fresh Opportunities and jobs.
+            section#form.section
+                div.info
+                    p Get In Touch 
+                form(action="/", method="post" name="ContactMe").Form 
+                    ul.noBullet 
+                        li
+                            p.ques Name 
+                            label(for="Name")
+                            input(type="text", name="Name")#Name.inputFields 
+                        li
+                            li 
+                            p.ques Email 
+                            label(for="Email")
+                            input(type="text", name="Email")#Email.inputFields
+                        li 
+                            p.ques Work Opportunities
+                            label(for="WorkOpportunities")
+                            input(type="text", name="WorkOpportunities")#WorkOpportunities.inputFields 
+                        li.btn 
+                            input(type="submit", value="Submit" name="submit" alt="Join" onclick="submit()")#btn
+            div.icons
+                a(href="https://www.linkedin.com/in/anushree-sharma-605422229/" target="__blank") 
+                    img(src="../pictures/linkedin.svg", alt="Linkedin", srcset="")#linkedin.iconsImg
+                a(href="https://medium.com/@anushreesharma232003" target="__blank")  
+                    img(src="../pictures/medium.svg", alt="", srcset="")#medium.iconsImg
+                a(href="https://github.com/Anushreesharma23" target="__blank") 
+                    img(src="../pictures/git.svg", alt="", srcset="")#git.iconsImg
+                a(href="https://www.adobe.com/?promoid=RTQCN3LX" target="__blank")  
+                    img(src="../pictures/behance.svg", alt="", srcset="")#behance.iconsImg
+
+        script 
+            include ../script/script.js
